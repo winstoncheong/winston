@@ -21,9 +21,9 @@
 \usepackage[nameinlink]{cleveref} % cleveref must be after hyperref
 % cleveref must be before any \declaretheorem, otherwise identifier error
 
-\theoremstyle{definition}
 
 \input{winstonTheoremCommon.tex}
+\theoremstyle{definition} % needs to be after amsthm import
 \input{winstonTheoremFancy.tex}
 % \input{winstonTheoremPlain.tex}
 % \input{winstonTheoremProblemPlain.tex}
