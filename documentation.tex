@@ -3,11 +3,18 @@
 
 \input{winstonPreambleDefaults.tex}
 
+\usepackage{listings}
+\lstset{
+basicstyle=\small\ttfamily,
+language={[LaTeX]TeX},
+}
+
+\usepackage{showexpl}
 \usepackage{bookmark}
 
 \title{Documenting these files}
 \author{Winston Cheong}
-\date{2024 Sept 07}
+\date{2024 Oct 13}
 
 \begin{document}
 \maketitle
@@ -60,7 +67,29 @@ $\GL(n)$, $\SL(n)$, $\SO(n)$, $\Sp(n)$, $\SU(n)$, $\U(n)$
 
 \section{Test Lie algebras}
 
-% $\gl(n)$, $\sl(n)$, $\so(n)$, $\sp(n)$, $\su(n)$, $\u(n)$
+The commands \verb|\u|, \verb|\so|, \verb|\sp| already exist in \TeX.
+
+I'm considering using the prefix \texttt{lie} before the name of the algebra / symbol to make the macro name.
+
+So
+\begin{LTXexample}[pos=b]
+$\liegl(n)$, $\liesl(n)$, $\lieso(n)$, $\liesp(n)$, $\liesu(n)$, $\lieu(n)$
+\end{LTXexample}
+
+
+I suppose that generally, \texttt{lie} can be used as a prefix for \verb|\mathfrak|.
+The prefix \texttt{k} can also be used.
+
+\section{Test paired delimiters}
+\verb|\gens{}| and \verb|\ideal{}|
+
+$\gens{a,b}$,
+$\ideal{x,y}$,
+\[
+\gens{\frac12, 5}, \quad
+\gens*{\frac12, 5}
+\]
+
 
 
 \end{document}
