@@ -1,1 +1,10 @@
 out/
+
+# latex output
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.synctex.gz
+*.tmp
